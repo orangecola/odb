@@ -1,0 +1,16 @@
+service: odb
+
+provider:
+  name: aws
+  runtime: python3.9
+  timeout: 30
+  versionFunctions: false
+  region: ap-southeast-1
+  tags:
+    Project: odb
+functions:
+  odb:
+    handler: odb.odb
+    memorySize: 128
+    events:
+      - httpApi: 'GET /'
