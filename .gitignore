@@ -1,4 +1,4 @@
-.serverless
+.serverless/**
 __pycache__
 tests/config.py
 pricecheck
